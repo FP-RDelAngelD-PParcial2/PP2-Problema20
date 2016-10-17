@@ -42,6 +42,7 @@ public class PP2Problema20 {
             }
         }
         if(suma==b){
+            suma=0;
             for(int i=1;i<b;i++){
                 if(b%i==0){
                     suma=suma+i;
