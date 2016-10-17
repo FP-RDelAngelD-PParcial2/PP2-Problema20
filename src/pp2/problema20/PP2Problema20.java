@@ -31,7 +31,9 @@ public class PP2Problema20 {
         }while(a<=0);//Mientras que a sea menor o igual que 0
         return a; //Regresa el valor de a
     }
-    public static void numerosAmigos(){
+    public static void numerosAmigos(){ //Dos números enteros positivos A y B 
+                                        //son números amigos si la suma de los divisores propios de A es igual a B 
+                                        //y la suma de los divisores propios de B es igual a A
         int a, b, suma;
         suma = 0;
         a=verificarNumero("numero 1 ");
