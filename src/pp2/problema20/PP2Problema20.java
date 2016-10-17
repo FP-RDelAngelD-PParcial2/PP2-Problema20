@@ -15,12 +15,12 @@ public class PP2Problema20 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        numerosAmigos();
     }
     public static int solicitarDatos(String d){ //Solicita los valores
         int miDato;
         Scanner entradaEscaner = new Scanner(System.in);
-        System.out.print("Introduce el dato " + d + "\n");
+        System.out.print("Introduce el dato " + d);
         miDato= entradaEscaner.nextInt();
         return miDato;
     }
@@ -32,10 +32,11 @@ public class PP2Problema20 {
         return a; //Regresa el valor de a
     }
     public static void numerosAmigos(){
-        int a, b;
+        int a, b, suma;
+        suma = 0;
         a=verificarNumero("numero 1 ");
         b=verificarNumero("numero 2 ");
-        
+
     }
     
 }
