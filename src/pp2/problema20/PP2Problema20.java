@@ -36,11 +36,13 @@ public class PP2Problema20 {
                                         //y la suma de los divisores propios de B es igual a A
         int a, b, suma;
         suma = 0;
-        a=verificarNumero("numero 1 ");
-        b=verificarNumero("numero 2 ");
-        for(int i=1;i<a;i++){
-            if(a%i==0){
-                suma=suma+i;
+        a=verificarNumero("numero 1 "); //Se solicita el primer numero //284
+        b=verificarNumero("numero 2 "); //Se solicita el segundo numero //220
+        for(int i=1;i<a;i++){//Ciclo para encontrar los divisores del numero 1
+                             //i se inicia en 1, mientras que i sea menor que a, i aumentara 1
+                             //i=1 1<284
+            if(a%i==0){    //Si el residuo de a entre i es igual a 0
+                suma=suma+i;//En la variable suma, se iran sumando los valores divisores del numero
             }
         }
         if(suma==b){
