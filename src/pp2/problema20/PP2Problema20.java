@@ -24,5 +24,18 @@ public class PP2Problema20 {
         miDato= entradaEscaner.nextInt();
         return miDato;
     }
+    public static int verificarNumero(String d){
+        int a; //Variable
+        do{ //Hacer que solicite datos y se guarden en a 
+        a = solicitarDatos(d);
+        }while(a<=0);//Mientras que a sea menor o igual que 0
+        return a; //Regresa el valor de a
+    }
+    public static void numerosAmigos(){
+        int a, b;
+        a=verificarNumero("numero 1 ");
+        b=verificarNumero("numero 2 ");
+        
+    }
     
 }
