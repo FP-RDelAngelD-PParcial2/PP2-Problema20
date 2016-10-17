@@ -36,7 +36,23 @@ public class PP2Problema20 {
         suma = 0;
         a=verificarNumero("numero 1 ");
         b=verificarNumero("numero 2 ");
-
+        for(int i=1;i<a;i++){
+            if(a%i==0){
+                suma=suma+i;
+            }
+        }
+        if(suma==b){
+            for(int i=1;i<b;i++){
+                if(b%i==0){
+                    suma=suma+i;
+                }
+            }
+        }
+        if(suma==a){
+            System.out.print("Los numeros " + a + " y " + b + " son amigos");
+        }else{
+            System.out.print("Los numeros " + a + " y " + b + " no son amigos");
+        }
     }
     
 }
