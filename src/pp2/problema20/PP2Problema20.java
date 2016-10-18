@@ -50,23 +50,34 @@ public class PP2Problema20 {
                            //284%2==0 VERDADERO
                            //284%3==0 FALSO (sale del ciclo y entra al for)
                            //284%4==0 VERDADERO
-                suma=suma+i;//En la variable suma, se iran sumando los valores divisores del numero
+                suma=suma+i;//En la variable suma, se iran sumando los valores divisores del primer numero
                             //suma=0+1 suma=1
                             //suma=1+2 suma=3
                             //suma=3+4 suma=7
             }
         }
-        if(suma==b){
-            for(int i=1;i<b;i++){
-                if(b%i==0){
-                    suma2=suma2+i;
+        if(suma==b){ //Si la suma de los divisores del primer numero es igual a el segundo numero //220==220 VERDADER0
+            for(int i=1;i<b;i++){ //Se ejecutara un ciclo for que encontrara los divisores del segundo numero
+                                  //i=1, 1<220
+                                  //i=2, 2<220
+                                  //i=3, 3<220
+                                  //i=4, 4<220
+                if(b%i==0){ //Si el residuo de b entre 1 es igual a 0
+                            //220%1==0 VERDADERO
+                            //220%2==0 VERDADERO
+                            //220%3==0 FALSO
+                            //220%4==0 VERDADERO
+                    suma2=suma2+i;//En la variable suma2, se iran sumando los valores divisores del segundo numero
+                                  //suma2=0+1 suma2=1
+                                  //suma2=1+2 suma2=3
+                                  //suma2=3+4 suma2=7
                 }
             }
         }
-        if(suma2==a){
-            System.out.print("Los numeros " + a + " y " + b + " son amigos");
-        }else{
-            System.out.print("Los numeros " + a + " y " + b + " no son amigos");
+        if(suma2==a){ //Si es que el resultado de suma2 es igual al primer numero
+            System.out.print("Los numeros " + a + " y " + b + " son amigos"); //Se imprime que si son amigos
+        }else{ //Sino
+            System.out.print("Los numeros " + a + " y " + b + " no son amigos"); //Se imprime que no son amigos
         }
     }
     
