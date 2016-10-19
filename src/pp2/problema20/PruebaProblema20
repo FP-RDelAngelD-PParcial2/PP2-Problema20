@@ -1,0 +1,9 @@
+run:
+Introduce el dato numero 1 220
+Introduce el dato numero 2 284
+Los numeros 220 y 284 son amigosBUILD SUCCESSFUL (total time: 3 seconds)
+
+run:
+Introduce el dato numero 1 226
+Introduce el dato numero 2 356
+Los numeros 226 y 356 no son amigosBUILD SUCCESSFUL (total time: 4 seconds)
